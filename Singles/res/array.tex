@@ -1,0 +1,585 @@
+\documentclass{article}
+
+\usepackage[french]{babel}
+\usepackage [utf8] {inputenc} % utf-8 / latin1 
+\usepackage{multicol}
+
+\setlength{\hoffset}{-18pt}
+\setlength{\oddsidemargin}{0pt} % Marge gauche sur pages impaires
+\setlength{\evensidemargin}{9pt} % Marge gauche sur pages paires
+\setlength{\marginparwidth}{54pt} % Largeur de note dans la marge
+\setlength{\textwidth}{481pt} % Largeur de la zone de texte (17cm)
+\setlength{\voffset}{-18pt} % Bon pour DOS
+\setlength{\marginparsep}{7pt} % Séparation de la marge
+\setlength{\topmargin}{0pt} % Pas de marge en haut
+\setlength{\headheight}{13pt} % Haut de page
+\setlength{\headsep}{10pt} % Entre le haut de page et le texte
+\setlength{\footskip}{27pt} % Bas de page + séparation
+\setlength{\textheight}{668pt} % Hauteur de la zone de texte (25cm)
+
+\begin{document}
+\begin{center}
+\renewcommand{\arraystretch}{1.4} 
+ \begin{tabular}{lrrrr}
+	\hline
+ & \multicolumn{2}{c}{\textbf{cplex}} & \multicolumn{2}{c}{\textbf{heuristique}}\\
+\textbf{Instance}  & \textbf{Temps (s)} & \textbf{Optimal ?}  & \textbf{Temps (s)} & \textbf{Optimal ?} \\\hline
+
+instanceTest110.txt & 0.02 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest12.txt & 0.04 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest161.txt & 0.04 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest196.txt & 0.03 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest212.txt & 0.03 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest224.txt & 0.02 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest236.txt & 0.03 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest244.txt & 0.01 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest25.txt & 0.03 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest251.txt & 0.02 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest281.txt & 0.02 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest291.txt & 0.06 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest307.txt & 0.04 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest321.txt & 0.03 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest326.txt & 0.02 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest355.txt & 0.05 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest372.txt & 0.02 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest381.txt & 0.02 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest388.txt & 0.01 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest410.txt & 0.04 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest415.txt & 0.01 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest417.txt & 0.02 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest432.txt & 0.02 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest458.txt & 0.02 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest476.txt & 0.02 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest500.txt & 0.02 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest506.txt & 0.04 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest512.txt & 0.02 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest534.txt & 0.04 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+\hline\end{tabular}
+\end{center}
+
+\newpage
+\begin{center}
+\renewcommand{\arraystretch}{1.4} 
+ \begin{tabular}{lrrrr}
+	\hline
+ & \multicolumn{2}{c}{\textbf{cplex}} & \multicolumn{2}{c}{\textbf{heuristique}}\\
+\textbf{Instance}  & \textbf{Temps (s)} & \textbf{Optimal ?}  & \textbf{Temps (s)} & \textbf{Optimal ?} \\\hline
+
+instanceTest566.txt & 0.03 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest582.txt & 0.03 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest636.txt & 0.04 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest639.txt & 0.08 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest644.txt & 0.02 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest653.txt & 0.02 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest763.txt & 0.02 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest777.txt & 0.02 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest779.txt & 0.02 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest790.txt & 0.01 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest800.txt & 0.02 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest842.txt & 0.03 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest847.txt & 0.02 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest848.txt & 0.03 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest863.txt & 0.02 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest871.txt & 0.04 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest912.txt & 0.04 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest914.txt & 0.08 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest953.txt & 0.03 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest959.txt & 0.03 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest984.txt & 0.03 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest989.txt & 0.02 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest994.txt & 0.05 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest110.txt & 0.02 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest12.txt & 0.04 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest161.txt & 0.04 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest196.txt & 0.03 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest212.txt & 0.03 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest224.txt & 0.02 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest236.txt & 0.03 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+\hline\end{tabular}
+\end{center}
+
+\newpage
+\begin{center}
+\renewcommand{\arraystretch}{1.4} 
+ \begin{tabular}{lrrrr}
+	\hline
+ & \multicolumn{2}{c}{\textbf{cplex}} & \multicolumn{2}{c}{\textbf{heuristique}}\\
+\textbf{Instance}  & \textbf{Temps (s)} & \textbf{Optimal ?}  & \textbf{Temps (s)} & \textbf{Optimal ?} \\\hline
+
+instanceTest244.txt & 0.01 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest25.txt & 0.03 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest251.txt & 0.02 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest281.txt & 0.02 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest291.txt & 0.06 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest307.txt & 0.04 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest321.txt & 0.03 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest326.txt & 0.02 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest355.txt & 0.05 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest372.txt & 0.02 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest381.txt & 0.02 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest388.txt & 0.01 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest410.txt & 0.04 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest415.txt & 0.01 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest417.txt & 0.02 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest432.txt & 0.02 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest458.txt & 0.02 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest476.txt & 0.02 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest500.txt & 0.02 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest506.txt & 0.04 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest512.txt & 0.02 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest534.txt & 0.04 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest566.txt & 0.03 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest582.txt & 0.03 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest636.txt & 0.04 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest639.txt & 0.08 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest644.txt & 0.02 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest653.txt & 0.02 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest763.txt & 0.02 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest777.txt & 0.02 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+\hline\end{tabular}
+\end{center}
+
+\newpage
+\begin{center}
+\renewcommand{\arraystretch}{1.4} 
+ \begin{tabular}{lrrrr}
+	\hline
+ & \multicolumn{2}{c}{\textbf{cplex}} & \multicolumn{2}{c}{\textbf{heuristique}}\\
+\textbf{Instance}  & \textbf{Temps (s)} & \textbf{Optimal ?}  & \textbf{Temps (s)} & \textbf{Optimal ?} \\\hline
+
+instanceTest779.txt & 0.02 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest790.txt & 0.01 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest800.txt & 0.02 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest842.txt & 0.03 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest847.txt & 0.02 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest848.txt & 0.03 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest863.txt & 0.02 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest871.txt & 0.04 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest912.txt & 0.04 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest914.txt & 0.08 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest953.txt & 0.03 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest959.txt & 0.03 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest984.txt & 0.03 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest989.txt & 0.02 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest994.txt & 0.05 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+\hline\end{tabular}
+\end{center}
+
+
+\end{document}

@@ -1,0 +1,513 @@
+\documentclass{article}
+
+\usepackage[french]{babel}
+\usepackage [utf8] {inputenc} % utf-8 / latin1 
+\usepackage{multicol}
+
+\setlength{\hoffset}{-18pt}
+\setlength{\oddsidemargin}{0pt} % Marge gauche sur pages impaires
+\setlength{\evensidemargin}{9pt} % Marge gauche sur pages paires
+\setlength{\marginparwidth}{54pt} % Largeur de note dans la marge
+\setlength{\textwidth}{481pt} % Largeur de la zone de texte (17cm)
+\setlength{\voffset}{-18pt} % Bon pour DOS
+\setlength{\marginparsep}{7pt} % Séparation de la marge
+\setlength{\topmargin}{0pt} % Pas de marge en haut
+\setlength{\headheight}{13pt} % Haut de page
+\setlength{\headsep}{10pt} % Entre le haut de page et le texte
+\setlength{\footskip}{27pt} % Bas de page + séparation
+\setlength{\textheight}{668pt} % Hauteur de la zone de texte (25cm)
+
+\begin{document}
+\begin{center}
+\renewcommand{\arraystretch}{1.4} 
+ \begin{tabular}{lrrrr}
+	\hline
+ & \multicolumn{2}{c}{\textbf{cplex}} & \multicolumn{2}{c}{\textbf{heuristique}}\\
+\textbf{Instance}  & \textbf{Temps (s)} & \textbf{Optimal ?}  & \textbf{Temps (s)} & \textbf{Optimal ?} \\\hline
+
+instanceTest.txt & 29.45 & 
+$\times$
+ & 60.0 & 
+\\
+instanceTest1.txt & 0.26 & 
+$\times$
+ & 60.0 & 
+\\
+instanceTest10.txt & 4.12 & 
+$\times$
+ & 60.0 & 
+\\
+instanceTest11.txt & 0.85 & 
+$\times$
+ & 60.0 & 
+\\
+instanceTest12.txt & 2.92 & 
+$\times$
+ & 60.0 & 
+\\
+instanceTest13.txt & 6.63 & 
+$\times$
+ & 60.0 & 
+\\
+instanceTest14.txt & 5.44 & 
+$\times$
+ & 60.0 & 
+\\
+instanceTest15.txt & 12.34 & 
+$\times$
+ & 60.0 & 
+\\
+instanceTest16.txt & 59.6 & 
+$\times$
+ & 60.0 & 
+\\
+instanceTest17.txt & 17.31 & 
+$\times$
+ & 60.0 & 
+\\
+instanceTest18.txt & 38.05 & 
+$\times$
+ & 60.01 & 
+\\
+instanceTest19.txt & 0.19 & 
+$\times$
+ & 0.46 & 
+$\times$
+\\
+instanceTest2.txt & 0.18 & 
+$\times$
+ & 60.01 & 
+\\
+instanceTest20.txt & 0.17 & 
+$\times$
+ & 5.87 & 
+$\times$
+\\
+instanceTest21.txt & 0.25 & 
+$\times$
+ & 60.01 & 
+\\
+instanceTest22.txt & 0.21 & 
+$\times$
+ & 60.0 & 
+\\
+instanceTest23.txt & 11.07 & 
+$\times$
+ & 60.0 & 
+\\
+instanceTest24.txt & 0.13 & 
+$\times$
+ & 60.0 & 
+\\
+instanceTest25.txt & 0.13 & 
+$\times$
+ & 60.0 & 
+\\
+instanceTest26.txt & 0.2 & 
+$\times$
+ & 60.0 & 
+\\
+instanceTest27.txt & 0.15 & 
+$\times$
+ & 60.0 & 
+\\
+instanceTest28.txt & 0.2 & 
+$\times$
+ & 60.0 & 
+\\
+instanceTest29.txt & 0.03 & 
+ & 60.0 & 
+\\
+instanceTest3.txt & 0.11 & 
+$\times$
+ & 16.41 & 
+$\times$
+\\
+instanceTest30.txt & 0.44 & 
+$\times$
+ & 60.0 & 
+\\
+instanceTest31.txt & 0.48 & 
+$\times$
+ & 60.0 & 
+\\
+instanceTest32.txt & 0.61 & 
+$\times$
+ & 60.0 & 
+\\
+instanceTest33.txt & 0.51 & 
+$\times$
+ & 60.0 & 
+\\
+instanceTest34.txt & 0.53 & 
+$\times$
+ & 60.0 & 
+\\
+\hline\end{tabular}
+\end{center}
+
+\newpage
+\begin{center}
+\renewcommand{\arraystretch}{1.4} 
+ \begin{tabular}{lrrrr}
+	\hline
+ & \multicolumn{2}{c}{\textbf{cplex}} & \multicolumn{2}{c}{\textbf{heuristique}}\\
+\textbf{Instance}  & \textbf{Temps (s)} & \textbf{Optimal ?}  & \textbf{Temps (s)} & \textbf{Optimal ?} \\\hline
+
+instanceTest35.txt & 2.24 & 
+$\times$
+ & 60.0 & 
+\\
+instanceTest36.txt & 0.02 & 
+ & 60.0 & 
+\\
+instanceTest37.txt & 0.77 & 
+$\times$
+ & 60.0 & 
+\\
+instanceTest38.txt & 2.9 & 
+$\times$
+ & 60.0 & 
+\\
+instanceTest39.txt & 0.05 & 
+$\times$
+ & 0.04 & 
+$\times$
+\\
+instanceTest4.txt & 0.11 & 
+$\times$
+ & 60.0 & 
+\\
+instanceTest40.txt & 0.03 & 
+$\times$
+ & 0.36 & 
+$\times$
+\\
+instanceTest41.txt & 0.05 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest42.txt & 0.05 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest43.txt & 0.05 & 
+$\times$
+ & 60.15 & 
+\\
+instanceTest44.txt & 0.08 & 
+$\times$
+ & 60.0 & 
+\\
+instanceTest45.txt & 0.05 & 
+$\times$
+ & 0.23 & 
+$\times$
+\\
+instanceTest46.txt & 0.07 & 
+$\times$
+ & 55.0 & 
+$\times$
+\\
+instanceTest47.txt & 0.06 & 
+$\times$
+ & 0.11 & 
+$\times$
+\\
+instanceTest48.txt & 0.05 & 
+$\times$
+ & 60.0 & 
+\\
+instanceTest49.txt & 0.09 & 
+$\times$
+ & 60.0 & 
+\\
+instanceTest5.txt & 0.09 & 
+$\times$
+ & 60.0 & 
+\\
+instanceTest50.txt & 0.07 & 
+$\times$
+ & 60.0 & 
+\\
+instanceTest51.txt & 0.1 & 
+$\times$
+ & 60.0 & 
+\\
+instanceTest52.txt & 0.07 & 
+$\times$
+ & 60.0 & 
+\\
+instanceTest53.txt & 0.08 & 
+$\times$
+ & 60.0 & 
+\\
+instanceTest6.txt & 0.13 & 
+$\times$
+ & 60.0 & 
+\\
+instanceTest7.txt & 0.18 & 
+$\times$
+ & 60.0 & 
+\\
+instanceTest8.txt & 0.16 & 
+$\times$
+ & 60.0 & 
+\\
+instanceTest9.txt & 2.85 & 
+$\times$
+ & 60.0 & 
+\\
+instanceTest.txt & 29.45 & 
+$\times$
+ & 60.0 & 
+\\
+instanceTest1.txt & 0.26 & 
+$\times$
+ & 60.0 & 
+\\
+instanceTest10.txt & 4.12 & 
+$\times$
+ & 60.0 & 
+\\
+instanceTest11.txt & 0.85 & 
+$\times$
+ & 60.0 & 
+\\
+instanceTest12.txt & 2.92 & 
+$\times$
+ & 60.0 & 
+\\
+\hline\end{tabular}
+\end{center}
+
+\newpage
+\begin{center}
+\renewcommand{\arraystretch}{1.4} 
+ \begin{tabular}{lrrrr}
+	\hline
+ & \multicolumn{2}{c}{\textbf{cplex}} & \multicolumn{2}{c}{\textbf{heuristique}}\\
+\textbf{Instance}  & \textbf{Temps (s)} & \textbf{Optimal ?}  & \textbf{Temps (s)} & \textbf{Optimal ?} \\\hline
+
+instanceTest13.txt & 6.63 & 
+$\times$
+ & 60.0 & 
+\\
+instanceTest14.txt & 5.44 & 
+$\times$
+ & 60.0 & 
+\\
+instanceTest15.txt & 12.34 & 
+$\times$
+ & 60.0 & 
+\\
+instanceTest16.txt & 59.6 & 
+$\times$
+ & 60.0 & 
+\\
+instanceTest17.txt & 17.31 & 
+$\times$
+ & 60.0 & 
+\\
+instanceTest18.txt & 38.05 & 
+$\times$
+ & 60.01 & 
+\\
+instanceTest19.txt & 0.19 & 
+$\times$
+ & 0.46 & 
+$\times$
+\\
+instanceTest2.txt & 0.18 & 
+$\times$
+ & 60.01 & 
+\\
+instanceTest20.txt & 0.17 & 
+$\times$
+ & 5.87 & 
+$\times$
+\\
+instanceTest21.txt & 0.25 & 
+$\times$
+ & 60.01 & 
+\\
+instanceTest22.txt & 0.21 & 
+$\times$
+ & 60.0 & 
+\\
+instanceTest23.txt & 11.07 & 
+$\times$
+ & 60.0 & 
+\\
+instanceTest24.txt & 0.13 & 
+$\times$
+ & 60.0 & 
+\\
+instanceTest25.txt & 0.13 & 
+$\times$
+ & 60.0 & 
+\\
+instanceTest26.txt & 0.2 & 
+$\times$
+ & 60.0 & 
+\\
+instanceTest27.txt & 0.15 & 
+$\times$
+ & 60.0 & 
+\\
+instanceTest28.txt & 0.2 & 
+$\times$
+ & 60.0 & 
+\\
+instanceTest29.txt & 0.03 & 
+ & 60.0 & 
+\\
+instanceTest3.txt & 0.11 & 
+$\times$
+ & 16.41 & 
+$\times$
+\\
+instanceTest30.txt & 0.44 & 
+$\times$
+ & 60.0 & 
+\\
+instanceTest31.txt & 0.48 & 
+$\times$
+ & 60.0 & 
+\\
+instanceTest32.txt & 0.61 & 
+$\times$
+ & 60.0 & 
+\\
+instanceTest33.txt & 0.51 & 
+$\times$
+ & 60.0 & 
+\\
+instanceTest34.txt & 0.53 & 
+$\times$
+ & 60.0 & 
+\\
+instanceTest35.txt & 2.24 & 
+$\times$
+ & 60.0 & 
+\\
+instanceTest36.txt & 0.02 & 
+ & 60.0 & 
+\\
+instanceTest37.txt & 0.77 & 
+$\times$
+ & 60.0 & 
+\\
+instanceTest38.txt & 2.9 & 
+$\times$
+ & 60.0 & 
+\\
+instanceTest39.txt & 0.05 & 
+$\times$
+ & 0.04 & 
+$\times$
+\\
+instanceTest4.txt & 0.11 & 
+$\times$
+ & 60.0 & 
+\\
+\hline\end{tabular}
+\end{center}
+
+\newpage
+\begin{center}
+\renewcommand{\arraystretch}{1.4} 
+ \begin{tabular}{lrrrr}
+	\hline
+ & \multicolumn{2}{c}{\textbf{cplex}} & \multicolumn{2}{c}{\textbf{heuristique}}\\
+\textbf{Instance}  & \textbf{Temps (s)} & \textbf{Optimal ?}  & \textbf{Temps (s)} & \textbf{Optimal ?} \\\hline
+
+instanceTest40.txt & 0.03 & 
+$\times$
+ & 0.36 & 
+$\times$
+\\
+instanceTest41.txt & 0.05 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest42.txt & 0.05 & 
+$\times$
+ & 0.0 & 
+$\times$
+\\
+instanceTest43.txt & 0.05 & 
+$\times$
+ & 60.15 & 
+\\
+instanceTest44.txt & 0.08 & 
+$\times$
+ & 60.0 & 
+\\
+instanceTest45.txt & 0.05 & 
+$\times$
+ & 0.23 & 
+$\times$
+\\
+instanceTest46.txt & 0.07 & 
+$\times$
+ & 55.0 & 
+$\times$
+\\
+instanceTest47.txt & 0.06 & 
+$\times$
+ & 0.11 & 
+$\times$
+\\
+instanceTest48.txt & 0.05 & 
+$\times$
+ & 60.0 & 
+\\
+instanceTest49.txt & 0.09 & 
+$\times$
+ & 60.0 & 
+\\
+instanceTest5.txt & 0.09 & 
+$\times$
+ & 60.0 & 
+\\
+instanceTest50.txt & 0.07 & 
+$\times$
+ & 60.0 & 
+\\
+instanceTest51.txt & 0.1 & 
+$\times$
+ & 60.0 & 
+\\
+instanceTest52.txt & 0.07 & 
+$\times$
+ & 60.0 & 
+\\
+instanceTest53.txt & 0.08 & 
+$\times$
+ & 60.0 & 
+\\
+instanceTest6.txt & 0.13 & 
+$\times$
+ & 60.0 & 
+\\
+instanceTest7.txt & 0.18 & 
+$\times$
+ & 60.0 & 
+\\
+instanceTest8.txt & 0.16 & 
+$\times$
+ & 60.0 & 
+\\
+instanceTest9.txt & 2.85 & 
+$\times$
+ & 60.0 & 
+\\
+\hline\end{tabular}
+\end{center}
+
+
+\end{document}
